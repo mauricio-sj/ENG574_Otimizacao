@@ -25,20 +25,19 @@ O problema com a formatação das fórmulas parece estar relacionado ao uso de s
 
 ---
 
+
 # Definição do Problema de Otimização para Transporte de Cargas
 
 ## Função Objetivo
 
-A função objetivo é maximizar o lucro \( Z \), dado pela soma dos lucros das cargas de carne e grãos:
+A função objetivo é maximizar o lucro **Z**, dado pela soma dos lucros das cargas de carne e grãos:
 
-\[
-Z = 0,35x_1 + 0,12x_2
-\]
+    Z = 0,35 * x1 + 0,12 * x2
 
 Onde:
 
-- \( x_1 \): quantidade de carne de boi a ser transportada (em kg).
-- \( x_2 \): quantidade de grãos a ser transportada (em kg).
+- **x1**: quantidade de carne de boi a ser transportada (em kg).
+- **x2**: quantidade de grãos a ser transportada (em kg).
 
 ## Restrições
 
@@ -47,25 +46,20 @@ O problema possui as seguintes restrições baseadas nas capacidades do navio:
 ### Restrição de Peso
 A soma dos pesos das cargas deve ser menor ou igual à capacidade máxima de peso do navio:
 
-\[
-x_1 + x_2 \leq 160.000
-\]
+    x1 + x2 <= 160.000
 
 ### Restrição de Volume
 A soma dos volumes das cargas deve ser menor ou igual à capacidade máxima de volume do navio:
 
-\[
-0,2x_1 + 0,4x_2 \leq 70.000
-\]
+    0,2 * x1 + 0,4 * x2 <= 70.000
 
 ### Não-negatividade
 A quantidade de cada carga transportada deve ser maior ou igual a zero:
 
-\[
-x_1 \geq 0 \quad \text{e} \quad x_2 \geq 0
-\]
+    x1 >= 0 e x2 >= 0
 
 ---
+
 
 
 ## Solução Ótima Encontrada
