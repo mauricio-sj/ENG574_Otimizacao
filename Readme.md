@@ -32,7 +32,7 @@ O problema com a formatação das fórmulas parece estar relacionado ao uso de s
 
 A função objetivo é maximizar o lucro **Z**, dado pela soma dos lucros das cargas de carne e grãos:
 
-    **Z = 0,35 * x1 + 0,12 * x2**
+   - **Z = 0,35 * x1 + 0,12 * x2**
 
 Onde:
 
@@ -46,7 +46,7 @@ O problema possui as seguintes restrições baseadas nas capacidades do navio:
 ### Restrição de Peso
 A soma dos pesos das cargas deve ser menor ou igual à capacidade máxima de peso do navio:
 
-    **x1 + x2 <= 160.000**
+   - **x1 + x2 <= 160.000**
 
 ### Restrição de Volume
 A soma dos volumes das cargas deve ser menor ou igual à capacidade máxima de volume do navio:
