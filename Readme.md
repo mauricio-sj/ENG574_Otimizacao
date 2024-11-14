@@ -21,7 +21,6 @@ Este projeto resolve um problema de otimização de carga para um navio utilizan
      - Lucro: R$ 0,12/kg
      
 3. O dono do navio pode aceitar toda ou parte da carga disponível para maximizar o lucro, sem exceder as restrições de capacidade do navio.
-O problema com a formatação das fórmulas parece estar relacionado ao uso de símbolos que podem ser interpretados como texto, em vez de código de fórmula em Markdown. Vou ajustar para que funcione corretamente usando sintaxe LaTeX dentro de delimitadores de Markdown para fórmulas. Aqui está o texto reformulado:
 
 ---
 
