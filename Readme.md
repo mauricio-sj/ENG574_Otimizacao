@@ -21,8 +21,13 @@ Este projeto resolve um problema de otimização de carga para um navio utilizan
      - Lucro: R$ 0,12/kg
      
 3. O dono do navio pode aceitar toda ou parte da carga disponível para maximizar o lucro, sem exceder as restrições de capacidade do navio.
+O problema com a formatação das fórmulas parece estar relacionado ao uso de símbolos que podem ser interpretados como texto, em vez de código de fórmula em Markdown. Vou ajustar para que funcione corretamente usando sintaxe LaTeX dentro de delimitadores de Markdown para fórmulas. Aqui está o texto reformulado:
 
-## Definição da Função Objetivo
+---
+
+# Definição do Problema de Otimização para Transporte de Cargas
+
+## Função Objetivo
 
 A função objetivo é maximizar o lucro \( Z \), dado pela soma dos lucros das cargas de carne e grãos:
 
@@ -31,6 +36,7 @@ Z = 0,35x_1 + 0,12x_2
 \]
 
 Onde:
+
 - \( x_1 \): quantidade de carne de boi a ser transportada (em kg).
 - \( x_2 \): quantidade de grãos a ser transportada (em kg).
 
@@ -38,20 +44,29 @@ Onde:
 
 O problema possui as seguintes restrições baseadas nas capacidades do navio:
 
-1. **Restrição de Peso**: A soma dos pesos das cargas deve ser menor ou igual à capacidade máxima de peso do navio:
-   \[
-   x_1 + x_2 \leq 160.000
-   \]
+### Restrição de Peso
+A soma dos pesos das cargas deve ser menor ou igual à capacidade máxima de peso do navio:
 
-2. **Restrição de Volume**: A soma dos volumes das cargas deve ser menor ou igual à capacidade máxima de volume do navio:
-   \[
-   0,2x_1 + 0,4x_2 \leq 70.000
-   \]
+\[
+x_1 + x_2 \leq 160.000
+\]
 
-3. **Não-negatividade**: A quantidade de cada carga transportada deve ser maior ou igual a zero:
-   \[
-   x_1 \geq 0 \quad 	ext{e} \quad x_2 \geq 0
-   \]
+### Restrição de Volume
+A soma dos volumes das cargas deve ser menor ou igual à capacidade máxima de volume do navio:
+
+\[
+0,2x_1 + 0,4x_2 \leq 70.000
+\]
+
+### Não-negatividade
+A quantidade de cada carga transportada deve ser maior ou igual a zero:
+
+\[
+x_1 \geq 0 \quad \text{e} \quad x_2 \geq 0
+\]
+
+---
+
 
 ## Solução Ótima Encontrada
 
