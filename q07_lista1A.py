@@ -71,8 +71,10 @@ def simplex(c, A, b):
         for i in range(len(tableau)):
             if i != pivot_row:
                 factor = tableau[i, pivot_col]
+                original_row = tableau[i].copy()  # Salva a linha original para cálculo detalhado
                 tableau[i] -= factor * tableau[pivot_row]
                 print(f"\nAtualizando linha {i} usando fator {factor}")
+                print(f"Cálculo: {original_row} - ({factor}) * {tableau[pivot_row]}")
                 print_colored_table(tableau, pivot_row, pivot_col)
 
         step += 1  # Incrementa o contador de etapas
